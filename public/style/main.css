@@ -1,0 +1,307 @@
+/* 
+    Created on : May 21, 2018, 6:53:36 AM
+    Author     : Kestutis Stugys
+*/
+
+/* General formating*/
+* 
+{
+    padding: 0;
+    margin: 0;
+}
+
+html, body
+{
+    width: 100%;
+}
+
+/* Setting up the background */
+body
+{
+    background-color: #324;
+    color: #eef;   
+}
+
+#main_header, #nav_soc, footer, main
+{
+    font-family: 'Nixie One', cursive;
+}
+
+main
+{
+    font-size: 36px;
+    margin-top: .5em;
+    display: flex;
+    flex-flow: column;
+}
+
+main h2
+{
+    font-size: 150%;
+    display: flex;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+main p
+{
+    column-width: 20em;
+    padding: .3em;
+    font-size: 40%;
+}
+
+/* Main header formating */
+#main_header
+{
+    display: flex;
+    margin-top: .3em;
+    border-bottom: #fff solid 3px;
+    font-size: 56px;
+}
+
+#logo
+{
+    height: 5em;
+    width: 5em;
+    display: flex;
+}
+
+#main_header_text
+{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 20em;
+    padding-left: calc(100% - 22em);
+}
+
+#main_header_text h1
+{
+    text-align: right;
+    font-size: 100%;
+}
+
+#main_header_text span
+{
+    text-align: right;
+    font-size: 60%;
+}
+
+/* Navigation and socials */
+#nav_soc
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Socials */
+#socials
+{
+    display: flex;
+    flex-direction: row;
+    right: 0px;
+}
+
+#socials a
+{
+    display: flex;
+    flex-direction: row;
+    width: 2em;
+    height: 2em;
+    border: #fff solid 2px;
+    border-radius: .3em;
+    padding: .3em;
+}
+
+
+
+#main_nav
+{
+    display: flex;
+}
+
+#main_nav a
+{
+    text-decoration: none;
+    display: flex;   
+    font-weight: bold;
+    color: #fff;
+}
+
+#main_nav a:hover
+{
+    background-color: #999;
+}
+
+/* Main section*/
+main
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+main h2
+{
+    padding: .5em;
+}
+
+footer
+{
+    display: block;
+    height: 2em;
+    background-color: #324;
+    border-top: #fff solid 1px;
+    width: calc(100% - 10em - 3px);
+    margin-left: 3em;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* For the largest screens */
+@media only screen and (min-width: 1201px)
+{
+    #main_header, #nav_soc, main
+    {
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    #nav_soc
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: calc(100% - 100px);
+        padding-top: .5em;
+    }
+    
+    #socials
+    {
+        margin-left: calc(100% - 40em);
+    }
+    
+    #socials a img
+    {
+        width: 2em;
+        height: 2em;
+    }
+    #main_nav a
+    {
+        width: 7em;
+        padding: .5em;
+        padding-right: 0px;
+        margin-right: 0px;
+        border-right: #fff solid 1px;
+        font-size: 110%;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px)
+{
+    #main_nav
+    {
+        
+        border-bottom: #fff solid 1px;
+        border-right: #fff solid 1px;
+        height: 2.1em;
+    }
+    #main_nav a
+    {
+        width: 5.8em;
+        padding: .3em;
+        margin-left: 0px;
+        border-left: #fff solid 1px;
+        height: 1.5em;
+    }
+    #main_header, #nav_soc, footer, main
+    {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #nav_soc
+    {
+        font-size: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 20px);
+    }
+    #socials
+    {
+        margin-left: calc(100% - 35em);
+    }
+    #socials a
+    {
+        height: 1.5em;
+        width: 1.5em; 
+    }
+    #socials a img
+    {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 585px)
+{
+    #main_header
+    {
+        font-size: 36px;
+    }
+    
+    #main_nav
+    {
+        border: none;
+    }
+    
+    #main_nav a
+    {
+        margin: auto;
+        font-size: 90%;
+        border: #fff solid 1px;
+        padding-top: 0px;
+        padding-bottom: .2em;
+        height: 1.5em;
+    }
+    
+    #main_header, #nav_soc, footer, main
+    {
+        width: calc(100% - 100px);
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    #socials
+    {
+        position: fixed;
+        right: 0px;
+        top: 2em;
+        flex-direction: column;
+    }
+    
+    #socials a
+    {
+        height: 1.5em;
+        width: 1.5em; 
+    }
+    
+    #main_nav
+    {
+        position: fixed;
+        flex-direction: row;
+        transform: rotate(-90deg);
+        left: -8em;
+        height: 1.5em;
+        padding: 0px;
+    }
+    footer
+    {
+        padding: 0px;
+        margin: 0px;
+        padding-left: .5em;
+        width: calc(100% - 1.5em);
+    }
+}
