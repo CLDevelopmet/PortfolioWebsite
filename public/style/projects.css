@@ -1,0 +1,34 @@
+#projects nav
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#projects nav a
+{
+    display: flex;
+    flex-direction: column;
+    width: 7em;
+    text-decoration: none;
+    color: #fff;
+    padding-right: .1em;
+}
+
+#projects nav a img
+{
+    display: flex;
+    width: 7em;
+    height: 7em;
+}
+
+#projects nav a div
+{
+    display: flex;
+}
+
+#projects nav a div div
+{    
+    font-size: 50%;
+    color: #fff;
+}

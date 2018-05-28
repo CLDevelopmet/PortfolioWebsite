@@ -13,6 +13,7 @@
 html, body
 {
     width: 100%;
+    min-width: 420px;
 }
 
 /* Setting up the background */
