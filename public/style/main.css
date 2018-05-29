@@ -10,7 +10,8 @@
     margin: 0;
 }
 
-html, body
+html, 
+body
 {
     width: 100%;
     min-width: 420px;
@@ -25,7 +26,7 @@ body
 
 #main_header, #nav_soc, footer, main
 {
-    font-family: 'Nixie One', cursive;
+    font-family: "Nixie One", cursive;
 }
 
 main
@@ -40,7 +41,6 @@ main h2
 {
     font-size: 150%;
     display: flex;
-    width: 100%;
     margin-bottom: .5em;
 }
 
@@ -100,7 +100,7 @@ main p
 {
     display: flex;
     flex-direction: row;
-    right: 0px;
+    right: 0;
 }
 
 #socials a
@@ -188,6 +188,7 @@ footer
         width: 2em;
         height: 2em;
     }
+    
     #main_nav a
     {
         width: 7em;
@@ -209,6 +210,7 @@ footer
         border-right: #fff solid 1px;
         height: 2.1em;
     }
+    
     #main_nav a
     {
         width: 5.8em;
@@ -217,12 +219,17 @@ footer
         border-left: #fff solid 1px;
         height: 1.5em;
     }
-    #main_header, #nav_soc, footer, main
+    
+    #main_header, 
+    #nav_soc, 
+    footer, 
+    main
     {
         width: calc(100% - 20px);
         margin-left: 10px;
         margin-right: 10px;
     }
+    
     #nav_soc
     {
         font-size: 90%;
@@ -230,15 +237,18 @@ footer
         margin-right: 10px;
         width: calc(100% - 20px);
     }
+    
     #socials
     {
         margin-left: calc(100% - 35em);
     }
+    
     #socials a
     {
         height: 1.5em;
         width: 1.5em; 
     }
+    
     #socials a img
     {
         width: 1.5em;
@@ -268,7 +278,10 @@ footer
         height: 1.5em;
     }
     
-    #main_header, #nav_soc, footer, main
+    #main_header, 
+    #nav_soc, 
+    footer, 
+    main
     {
         width: calc(100% - 100px);
         margin-right: 50px;
@@ -278,7 +291,7 @@ footer
     #socials
     {
         position: fixed;
-        right: 0px;
+        right: 0;
         top: 2em;
         flex-direction: column;
     }
@@ -296,12 +309,13 @@ footer
         transform: rotate(-90deg);
         left: -8em;
         height: 1.5em;
-        padding: 0px;
+        padding: 0;
     }
+    
     footer
     {
-        padding: 0px;
-        margin: 0px;
+        padding: 0;
+        margin: 0;
         padding-left: .5em;
         width: calc(100% - 1.5em);
     }
