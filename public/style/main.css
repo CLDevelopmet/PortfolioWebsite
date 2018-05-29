@@ -14,7 +14,7 @@ html,
 body
 {
     width: 100%;
-    min-width: 420px;
+    min-width: 100px;
 }
 
 /* Setting up the background */
@@ -29,13 +29,6 @@ body
     font-family: "Nixie One", cursive;
 }
 
-main
-{
-    font-size: 36px;
-    margin-top: .5em;
-    display: flex;
-    flex-flow: column;
-}
 
 main h2
 {
@@ -57,7 +50,6 @@ main p
     display: flex;
     margin-top: .3em;
     border-bottom: #fff solid 3px;
-    font-size: 56px;
 }
 
 #logo
@@ -318,5 +310,32 @@ footer
         margin: 0;
         padding-left: .5em;
         width: calc(100% - 1.5em);
+    }
+}
+@media only screen and (min-width: 451px)
+{
+    main
+    {
+        font-size: 36px;
+        margin-top: .5em;
+    }
+    
+    #main_header
+    {
+        font-size: 56px;
+    }
+}
+
+@media only screen and (max-width: 450px)
+{
+    main
+    {
+        font-size: 18px;
+        margin-top: .3em;
+    }
+    
+    #main_header
+    {
+        font-size: 24px;
     }
 }
